@@ -1,6 +1,6 @@
 "use strict";
 (function () {
-    const mySwiper = new Swiper('.swiper-container', {
+    const swiperLearn = new Swiper('.slider-course', {
         slidesPerView: 3,
         spaceBetween: 35,
         breakpoints: {
