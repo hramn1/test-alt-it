@@ -67,7 +67,7 @@
   }
   &__input-fio{
     flex-basis: 100%;
-    color: #23346B;
+    color: $blue-dark;
     height: 50px;
     padding-left: 20px;
     padding-right: 10px;
@@ -76,6 +76,9 @@
     box-sizing: border-box;
     box-shadow: inset 0 1px 3px rgba(35, 52, 107, 0.05);
     border-radius: 3px;
+    &:focus{
+      border: 1px solid lighten($blue-dark, 20);
+    }
   }
   &__label-checkbox{
     font-size: 12px;
@@ -112,13 +115,16 @@
     margin-top: 40px;
     width: 145px;
     height: 50px;
-    background: #23346B;
+    background: $blue-dark;
     color: $main-white;
     line-height: 20px;
     border: 0;
     border-radius: 35px;
     box-sizing: border-box;
     cursor: pointer;
+    &:hover{
+      background: darken($blue-dark, 5);
+    }
   }
 }
 .contact{
@@ -139,7 +145,7 @@
     width: 270px;
     order: 1;
     flex-grow: 3;
-    color: #23346B;
+    color: $blue-dark;
     margin-right: 20px;
     height: 50px;
     background: #F5F6F8;
@@ -149,6 +155,9 @@
     box-sizing: border-box;
     box-shadow: inset 0 1px 3px rgba(35, 52, 107, 0.05);
     border-radius: 3px;
+    &:focus{
+      border: 1px solid lighten($blue-dark, 20);
+    }
     &--email{
       margin-right: 0;
     }
@@ -166,10 +175,10 @@
      right: 30px;
       top: 20px;
       &::before{
-        background-color: red;
+        background-color: $main-red;
       }
       &::after{
-        background-color: red;
+        background-color: $main-red;
       }
     }
   }
