@@ -1,0 +1,62 @@
+@font-face {
+  font-family:"SF UI";
+  font-weight:400;
+  font-style:normal;
+  src:url(../fonts/SFUIDisplay-Regular.woff2) format("woff2"),
+    url(../fonts/SFUIDisplay-Regular.woff) format("woff");
+  font-display: fallback;
+}
+@font-face {
+  font-family:"SF UI";
+  font-weight:500;
+  font-style:normal;
+  src:url(../fonts/SFUIDisplay-Medium.woff2) format("woff2"),
+  url(../fonts/SFUIDisplay-Medium.woff) format("woff");
+  font-display: fallback;
+}
+@font-face {
+  font-family:"SF UI";
+  font-weight:700;
+  font-style:normal;
+  src:url(../fonts/SFUIDisplay-Bold.woff2) format("woff2"),
+  url(../fonts/SFUIDisplay-Bold.woff) format("woff");
+  font-display: fallback;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "SF UI", Arial, sans-serif;
+  font-size: 15px;
+  padding-top: 5px;
+  height: 150vh;
+  position: relative;
+  font-weight: 500;
+  background-color: #ddd;
+}
+.container{
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media(max-width: $small-notebook){
+  .container {
+    width: 1260px
+  }
+}
+@media(max-width: $tablet){
+  .container {
+    width: 1000px
+  }
+}
+@media(max-width: $small-tablet){
+  .container {
+    width: 750px
+  }
+}
+@media(max-width: $mobile) {
+  .container {
+    width: 100%;
+    min-width: 320px;
+  }
+}
